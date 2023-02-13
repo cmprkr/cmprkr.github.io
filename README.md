@@ -2,7 +2,7 @@
 A simple chess engine based on simple Probability.
 
 ## About
-The primary concern of chess-ai is the decision-making part of the application. All functionality outside the scope of the AI are implemented using external libraries:
+The primary concern of C-PA is the decision-making part of the application. All functionality outside the scope of the AI are implemented using external libraries:
 - Chessboard GUI: Using the chessboard.js API
 - Game Mechanics: Using the chess.js API
 
