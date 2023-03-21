@@ -1,7 +1,7 @@
-# Chess Engine C-PA
-A simple chess engine based on simple Probability.
+# Projects & Programs
+A simple portfolio featuring all of my programs and code.
 
-## About
+# Chess Engine
 The primary concern of C-PA is the decision-making part of the application. All functionality outside the scope of the AI are implemented using external libraries:
 - Chessboard GUI: Using the chessboard.js API
 - Game Mechanics: Using the chess.js API
@@ -19,3 +19,8 @@ A global sum is used to keep track of black's evaluation score after each move, 
 
 ## License
 Use of this project is governed by Cameron Parker
+
+# docsGPT
+A version of gpt-3.5-turbo built in to google docs.
+- Custom Menu
+- Functional highlight-to-query
