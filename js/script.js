@@ -1,11 +1,3 @@
-document.addEventListener('click', function(event) {
-    
-    if (event.target.matches('.no-html-extension')) {
-        event.preventDefault();
-        history.pushState(null, null, event.target.href);
-    };
-});
-
 document.addEventListener("DOMContentLoaded", function() {
 
     function clearMainContent() {
