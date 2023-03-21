@@ -1,4 +1,7 @@
-# Chess Engine C-PA
+# Simple Portfolio
+A website to showcase my projects and programs.
+
+# Chess Engine
 A simple chess engine based on simple Probability.
 
 ## About
@@ -19,3 +22,8 @@ A global sum is used to keep track of black's evaluation score after each move, 
 
 ## License
 Use of this project is governed by Cameron Parker
+
+# docsGPT
+gpt-3.5-turbo built into Google Docs.
+- Selection menu
+- Supports highlight-to-query
