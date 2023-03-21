@@ -1,0 +1,121 @@
+.content-heading {
+	font-family: 'Roboto', sans-serif;
+    font-size: 34px;
+    font-weight: 400;
+    color: white;
+	text-decoration: none;
+	font-weight: bold;
+	display: inline;
+}
+
+.content-heading-mini {
+	font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    color: white;
+	text-decoration: none;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+
+.content-title {
+  font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    font-weight: bold;
+    color: indianred;
+  text-decoration: none;
+}
+
+.content-heading-hr-t {
+  margin-top: 10px;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 10px;
+}
+
+.content-section-hr {
+  margin-top: 1px;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 1px;
+}
+
+.content-overview-box {
+  width: 100%;
+}
+
+.content-section-a {
+  font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: indianred;
+  text-decoration: none;
+  display: inline;
+}
+
+.content-section-a:hover {
+  color: white;
+}
+
+.content-heading-hr-b {
+  margin-bottom: 10px;
+  padding-bottom: 0;
+  margin-top: 10px;
+}
+
+.content-subheading {
+	font-family: 'Roboto', sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    color: gray;
+	text-decoration: none;
+	display: inline;
+}
+
+.content-section-p {
+	font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: gray;
+	text-decoration: none;
+}
+
+.content-overview-link {
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    color: indianred;
+	text-decoration: none;
+}
+
+.content-overview-link:hover {
+	color: lightgray;
+}
+
+.content-overview-link-marker {
+	margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    color: gray;
+    font-family: 'Roboto', sans-serif;
+	text-decoration: none;
+	display: inline;
+}
+
+.heading-sep-3 {
+  width: 250px;
+  display: inline;
+  float: left;
+}
+
+.heading-sep-4 {
+  width: 100%;
+  height: 227px;
+}
+
+.my-image {
+  width: 30px;
+  height: 30px;
+}

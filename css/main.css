@@ -3,9 +3,10 @@
 }
 
 #myBoard {
-    max-width: 100%;
-    height: auto;
-    overflow: scroll;
+    width: 500px;
+    height: 500px;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .highlight-white {
@@ -32,4 +33,22 @@
 .btn-header {
     font-size: 20px;
     font-weight: bold;
+}
+
+.center {
+    display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+}
+
+.thing {
+    width: 500px;
+    height: 80px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+#settings {
+    display: none;
 }
