@@ -904,7 +904,7 @@ document.addEventListener("DOMContentLoaded", function() {
             <hr>
             <div class="link-list">
                 <a class="project-link" href=""><p class="project-link-number">1. </p>docsGPT</a><br>
-                <a class="project-link default no-html-extension" href="/engine.html"><p class="project-link-number">2. </p>Chess Engine</a><br>
+                <a class="project-link default no-html-extension" href="engine"><p class="project-link-number">2. </p>Chess Engine</a><br>
             </div>
             <hr>
             <div class="contact-list">
