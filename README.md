@@ -1,10 +1,10 @@
 # Simple Portfolio
 A website to showcase my projects and programs.
 
-# Chess Engine
+## Chess Engine
 A simple chess engine based on simple Probability.
 
-## About
+### About
 The primary concern of C-PA is the decision-making part of the application. All functionality outside the scope of the AI are implemented using external libraries:
 - Chessboard GUI: Using the chessboard.js API
 - Game Mechanics: Using the chess.js API
@@ -15,15 +15,15 @@ The evaluation function uses [piece square tables](https://www.chessprogramming.
 
 A global sum is used to keep track of black's evaluation score after each move, which is used to display the 'advantage' bar. 
 
-## How to Play?
+### How to Play?
 1. Head over to https://cmprkr.github.io.
 
 2. Play as white by dragging a piece to your desired location. The AI plays as black.
 
-## License
+### License
 Use of this project is governed by Cameron Parker
 
-# docsGPT
+## docsGPT
 gpt-3.5-turbo built into Google Docs.
 - Selection menu
 - Supports highlight-to-query
