@@ -919,7 +919,7 @@ document.addEventListener("DOMContentLoaded", function() {
         var img = document.createElement("img");
         img.src = "images/docs/writing.png";
         img.style.width = "100%";
-        contentSec1.appendChild(img);
+        contentSec3.appendChild(img);
 
         // docs section 4
 
@@ -954,7 +954,7 @@ document.addEventListener("DOMContentLoaded", function() {
         var img = document.createElement("img");
         img.src = "images/docs/research.png";
         img.style.width = "100%";
-        contentSec1.appendChild(img);
+        contentSec4.appendChild(img);
     };
 
     const sidebarHTML = `
