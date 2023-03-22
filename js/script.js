@@ -916,10 +916,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
         };
 
-        var img = document.createElement("img");
-        img.src = "images/docs/writing.png";
-        img.style.width = "100%";
-        contentSec3.appendChild(img);
+        var img3 = document.createElement("img");
+        img3.src = "images/docs/writing.png";
+        img3.style.width = "100%";
+        contentSec3.appendChild(img3);
 
         // docs section 4
 
@@ -951,10 +951,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
         };
 
-        var img = document.createElement("img");
-        img.src = "images/docs/research.png";
-        img.style.width = "100%";
-        contentSec4.appendChild(img);
+        var img4 = document.createElement("img");
+        img4.src = "images/docs/research.png";
+        img4.style.width = "100%";
+        contentSec4.appendChild(img4);
     };
 
     const sidebarHTML = `
