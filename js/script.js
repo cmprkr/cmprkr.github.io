@@ -823,10 +823,6 @@ document.addEventListener("DOMContentLoaded", function() {
             'At its core, "docsGPT" is built on the GPT-3.5 language model, a state-of-the-art artificial intelligence system developed by OpenAI. By leveraging the power of GPT-3.5, "docsGPT" is able to perform a wide range of writing and research tasks with remarkable accuracy and efficiency.',
             'One of the key features of "docsGPT" is its intuitive user interface. The program is integrated with Google Docs, which means you can access it directly from your document. Once you have opened "docsGPT," you will see a menu that contains a variety of options for different tasks. You can choose to generate ideas, find sources, research a topic, answer a question, or write an essay. Each of these options is designed to help you with a specific aspect of your writing or research, and all of them are powered by the incredible GPT-3.5 language model.',
             'So, whether you are a student working on a research project, a writer looking for inspiration, or anyone who needs help with writing and research, "docsGPT" is here to help. With its powerful AI capabilities and intuitive user interface, "docsGPT" is the ultimate tool for anyone who wants to take their writing and research to the next level. So, let us dive in and explore everything that "docsGPT" has to offer!',
-            'As the developer of docsGPT, I wanted to create a powerful tool that streamlines the writing and research process for individuals, allowing them to quickly and easily generate high-quality content for their documents. This program uses the OpenAI API, specifically the GPT-3.5-turbo model, to generate responses to various prompts and tasks. The goal of this program is to provide users with a variety of tools that can assist them in their writing and research, while still ensuring that the content generated is of high quality and relevant to the task at hand.',
-            'The docsGPT program is designed to be intuitive and easy to use, with a simple interface and clear instructions for each task. The program includes a variety of different tools, each with its own specific function. Some of these tools include generating ideas, finding sources, summarizing text, answering questions, and expanding on selected text. The program is also equipped with a tone selector that allows users to adjust the formatting tone of their content.',
-            'With docsGPT, users can save a significant amount of time and effort when it comes to writing and research. Rather than spending hours poring over sources and writing and revising content, users can simply input their prompts and allow the program to generate high-quality responses in a matter of minutes. This makes it an ideal tool for students, researchers, and writers who need to produce high-quality content quickly and efficiently.',
-            'Overall, the docsGPT program is a powerful tool that can help streamline the writing and research process for individuals. Whether you are working on a research paper, a creative writing project, or any other type of written content, this program can help you produce high-quality results quickly and efficiently.',
         ];
 
         const contentSec1 = document.getElementById("content-sec-1");
@@ -850,6 +846,11 @@ document.addEventListener("DOMContentLoaded", function() {
             paragraph.textContent = paragraphVar;
             contentSec1.appendChild(paragraph);
         };
+
+        var img = document.createElement("img");
+        img.src = "images/docs/docsGPT.png";
+        img.style.width = "100%";
+        contentSec1.appendChild(img);
 
         // engine section 2
 
