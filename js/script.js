@@ -787,6 +787,8 @@ document.addEventListener("DOMContentLoaded", function() {
         const titles = [
             "Overview",
             "Functions",
+            "Writing",
+            "Research",
         ];
 
         const contentOverview = document.getElementById("content-overview");
@@ -816,7 +818,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
         addScrollListeners();
         
-        // engine section 1
+        // docs section 1
 
         const eng_paragraphVars1 = [
             'Welcome to the documentation for "docsGPT"! My name is Cameron Parker, and I am excited to introduce you to this program. "docsGPT" is a powerful tool that can help you with various tasks related to writing and research. Whether you need to generate ideas for a writing project, find sources for your research, or summarize a piece of text, "docsGPT" can do it all.',
@@ -852,7 +854,7 @@ document.addEventListener("DOMContentLoaded", function() {
         img.style.width = "100%";
         contentSec1.appendChild(img);
 
-        // engine section 2
+        // docs section 2
 
         const eng_paragraphVars2 = [
             'As the developer of docsGPT, I wanted to create a powerful tool that streamlines the writing and research process for individuals, allowing them to quickly and easily generate high-quality content for their documents. This program uses the OpenAI API, specifically the GPT-3.5-turbo model, to generate responses to various prompts and tasks. The goal of this program is to provide users with a variety of tools that can assist them in their writing and research, while still ensuring that the content generated is of high quality and relevant to the task at hand.',
@@ -882,6 +884,77 @@ document.addEventListener("DOMContentLoaded", function() {
             contentSec2.appendChild(paragraph);
 
         };
+
+        // docs section 3
+
+        const eng_paragraphVars3 = [
+            'The "Write Paragraph" function prompts the user to select a portion of text within the document and generates a formal paragraph based on that selection. The generated paragraph is formatted in a scholarly manner with 5-8 sentences, and the language used is above high school level. The function uses the text-davinci-002 model to generate the paragraph.',
+            'The "Expand" function prompts the user to select a portion of text within the document and generates a more detailed and expanded version of that selection. The generated text is also formatted in a formal writing style and uses the text-davinci-002 model.',
+            'The "Expand Thesis" function prompts the user to select a thesis statement within the document and generates a formal, in-depth essay based on that thesis. The generated essay is also formatted in a scholarly manner and uses the text-davinci-002 model.',
+            'The "Summarize Text" function prompts the user to select a portion of text within the document and generates a concise summary of that selection in bullet points. The function uses the text-davinci-002 model to generate the summary.',
+        ];
+
+        const contentSec3 = document.getElementById("content-sec-3");
+
+        const introHeading3 = document.createElement("h3");
+        introHeading3.setAttribute("class", "content-heading-mini");
+        introHeading3.textContent = "Writing";
+        contentSec3.appendChild(introHeading3);
+
+        const hr3 = document.createElement("hr");
+        hr3.setAttribute("class", "content-section-hr");
+        contentSec3.appendChild(hr3);
+
+        for (let i = 1; i <= eng_paragraphVars3.length; i++) {
+            const paragraphID = `content3p${i}`;
+            const paragraphVar = eng_paragraphVars3[i-1];
+            const paragraph = document.createElement("p");
+            paragraph.setAttribute("class", "content-section-p");
+            paragraph.setAttribute("id", paragraphID);
+            paragraph.textContent = paragraphVar;
+            contentSec3.appendChild(paragraph);
+
+        };
+
+        var img = document.createElement("img");
+        img.src = "images/docs/writing.png";
+        img.style.width = "100%";
+        contentSec1.appendChild(img);
+
+        // docs section 4
+
+        const eng_paragraphVars4 = [
+            'The first function, "Generate Ideas," generates new ideas related to a selected topic. It takes the selected text as input, sends it to the GPT-3 model, and returns a list of new ideas related to the topic.',
+            'The second function, "Find Sources," generates a list of potential scholarly sources related to a selected topic. It takes the selected text as input, sends it to the GPT-3 model, and returns a list of sources that might be relevant.',
+            'The third function, "Research Topic," generates a comprehensive research report on a selected topic. It takes the selected text as input, sends it to the GPT-3 model, and returns a detailed report on the topic, with information gathered from a variety of sources.',
+        ];
+
+        const contentSec4 = document.getElementById("content-sec-4");
+
+        const introHeading4 = document.createElement("h3");
+        introHeading4.setAttribute("class", "content-heading-mini");
+        introHeading4.textContent = "Research";
+        contentSec4.appendChild(introHeading4);
+
+        const hr4 = document.createElement("hr");
+        hr4.setAttribute("class", "content-section-hr");
+        contentSec4.appendChild(hr4);
+
+        for (let i = 1; i <= eng_paragraphVars4.length; i++) {
+            const paragraphID = `content4p${i}`;
+            const paragraphVar = eng_paragraphVars4[i-1];
+            const paragraph = document.createElement("p");
+            paragraph.setAttribute("class", "content-section-p");
+            paragraph.setAttribute("id", paragraphID);
+            paragraph.textContent = paragraphVar;
+            contentSec4.appendChild(paragraph);
+
+        };
+
+        var img = document.createElement("img");
+        img.src = "images/docs/research.png";
+        img.style.width = "100%";
+        contentSec1.appendChild(img);
     };
 
     const sidebarHTML = `
