@@ -957,6 +957,89 @@ document.addEventListener("DOMContentLoaded", function() {
         contentSec4.appendChild(img4);
     };
 
+    function metageniePage() {
+        event.preventDefault(); // Prevents the default behavior of the link
+
+        clearMainContent(); // Clear .main-content
+
+        mainContent.scrollTo(0, 0); // Scroll to the top of the page
+
+        createHeading('metagenie', ' Documentation');
+        createHeader();
+        createSections(16);
+        createFooter(60);
+        createFooter(60);
+
+        // content overview html
+
+        const titles = [
+            "Overview",
+            "Functions",
+        ];
+
+        const contentOverview = document.getElementById("content-overview");
+        const hr = document.createElement("hr");
+        hr.setAttribute("class", "content-heading-hr-t");
+        contentOverview.appendChild(hr);
+
+        for (let i = 0; i < titles.length; i++) {
+            const anchor = document.createElement("a");
+            anchor.setAttribute("class", "content-overview-link");
+            anchor.setAttribute("href", "javascript:void(0)");
+            anchor.setAttribute("data-section-id", `content-sec-${i + 1}`);
+
+            const marker = document.createElement("p");
+            marker.setAttribute("class", "content-overview-link-marker");
+            marker.textContent = `${i + 1}.`;
+
+            anchor.appendChild(marker);
+            anchor.insertAdjacentText("beforeend", titles[i]);
+            contentOverview.appendChild(anchor);
+
+            if (i < titles.length - 1) {
+                const lineBreak = document.createElement("br");
+                contentOverview.appendChild(lineBreak);
+            }
+        }
+
+        addScrollListeners();
+        
+        // docs section 1
+
+        const eng_paragraphVars1 = [
+            'Documentation in process.',
+        ];
+
+        const contentSec1 = document.getElementById("content-sec-1");
+
+        const introHeading = document.createElement("h3");
+        introHeading.setAttribute("class", "content-heading-mini");
+        introHeading.textContent = "Overview";
+        contentSec1.appendChild(introHeading);
+
+        const hr1 = document.createElement("hr");
+        hr1.setAttribute("class", "content-section-hr");
+        contentSec1.appendChild(hr1);
+
+        for (let i = 1; i <= eng_paragraphVars1.length; i++) {
+
+            const paragraphID = `content1p${i}`;
+            const paragraphVar = eng_paragraphVars1[i-1];
+            const paragraph = document.createElement("p");
+            paragraph.setAttribute("class", "content-section-p");
+            paragraph.setAttribute("id", paragraphID);
+            paragraph.textContent = paragraphVar;
+            contentSec1.appendChild(paragraph);
+        };
+
+        /*
+        var img = document.createElement("img");
+        img.src = "images/docs/docsGPT.png";
+        img.style.width = "100%";
+        contentSec1.appendChild(img);
+        */
+    };
+
     const sidebarHTML = `
         <header>
             <a id="doc-homePageButtonBig" class="header-link" href="">Projects and Programs</a>
@@ -969,8 +1052,9 @@ document.addEventListener("DOMContentLoaded", function() {
         <nav>
             <hr>
             <div class="link-list">
-                <a class="project-link" href=""><p class="project-link-number">1. </p>docsGPT</a><br>
+                <a class="project-link default" href="https://github.com/cmprkr/docsGPT"><p class="project-link-number">1. </p>docsGPT</a><br>
                 <a class="project-link default" href="/engine.html"><p class="project-link-number">2. </p>Chess Engine</a><br>
+                <a class="project-link default" href="https://github.com/cmprkr/metagenie"><p class="project-link-number">3. </p>metagenie</a><br>
             </div>
             <hr>
             <div class="contact-list">
@@ -983,9 +1067,9 @@ document.addEventListener("DOMContentLoaded", function() {
             <hr>
             <div class="documentation-list">
                 <h3 class="subhead">Documentation</h3>
-                <a id="doc-websiteButton" class="project-link" href="">Website</a><br>
                 <a id="doc-docsGptButton" class="project-link" href="">docsGPT</a><br>
                 <a id="doc-chessEngineButton" class="project-link" href="">Chess Engine</a><br>
+                <a id="doc-metagenieButton" class="project-link" href="">metagenie</a><br>
             </div>
         </nav>
     `;
@@ -1024,6 +1108,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const pro_docsGptButton = document.getElementById('pro-docsGPT');
     const pro_engineButton = document.getElementById('pro-engine');
     const doc_chessEngineButton = document.getElementById('doc-chessEngineButton');
+    const doc_metagenieButton = document.getElementById('doc-metagenieButton');
     const mainContent = document.querySelector('.main-content');
     const mainContentScroll = document.querySelector('.main-content');
     const top_home_button = document.getElementById('top_home');
@@ -1079,5 +1164,10 @@ document.addEventListener("DOMContentLoaded", function() {
     doc_docsGptButton.addEventListener('click', function(event) {
 
         docsPage();
+    });
+
+    doc_metagenieButton.addEventListener('click', function(event) {
+
+        metageniePage();
     });
 });
