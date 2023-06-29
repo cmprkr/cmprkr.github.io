@@ -1,0 +1,677 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@600&display=swap');
+
+body {
+
+	padding: 0;
+	border: 0;
+	margin: 0;
+	overflow-x: hidden;
+	overflow-y: hidden;
+	width: 100vw;
+	height: 100vh;
+
+}
+
+#left_slider {
+
+	background: #A6A6A6;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	height: 100vh;
+	width: 50vw;
+	right: 50%;
+	z-index: 12;
+
+}
+
+#right_slider {
+
+	background: #6F6D70;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	height: 100vh;
+	width: 50vw;
+	left: 50%;
+	z-index: 12;
+}
+
+#left_block {
+
+	background: #6F6D70;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	left: 0;
+	top: 0;
+	height: 100vh;
+	width: 50vw;
+	z-index: 9;
+
+}
+
+#right_block {
+
+	background: #A6A6A6;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	right: 0;
+	top: 0;
+	height: 100vh;
+	width: 50vw;
+	z-index: 9;
+
+}
+
+#button_77 {
+
+	position: absolute;
+	height: 25%;
+	width: 60%;
+	right: 0%;
+	background: transparent;
+	z-index: 100;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+#button_78 {
+
+	position: absolute;
+	height: 25%;
+	width: 60%;
+	left: 0%;
+	background: transparent;
+	z-index: 100;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+#car_77 {
+
+	position: absolute;
+	width: 75%;
+	height: 0px;
+	right: 0;
+
+}
+
+#car_77 .top_border {
+
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 3px;
+	background: #ffffff;
+
+}
+
+#car_77 .left_border {
+
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 3px;
+	height: 100%;
+	background: #ffffff;
+
+}
+
+#car_77 .bottom_border {
+
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	height: 3px;
+	background: #ffffff;
+
+}
+
+#car_78 {
+
+	position: absolute;
+	width: 75%;
+	height: 0px;
+	left: 0;
+
+}
+
+#car_78 .top_border {
+
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 3px;
+	background: #000000;
+
+}
+
+#car_78 .right_border {
+
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 3px;
+	height: 100%;
+	background: #000000;
+
+}
+
+#car_78 .bottom_border {
+
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	height: 3px;
+	background: #000000;
+
+}
+
+#car_77_flip {
+
+	position: absolute;
+	width: 75%;
+	height: 0px;
+	left: 0;
+
+}
+
+#car_77_flip .top_border {
+
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 3px;
+	background: #ffffff;
+
+}
+
+#car_77_flip .right_border {
+
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 3px;
+	height: 100%;
+	background: #ffffff;
+
+}
+
+#car_77_flip .bottom_border {
+
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	height: 3px;
+	background: #ffffff;
+
+}
+
+#car_78_flip {
+
+	position: absolute;
+	width: 75%;
+	height: 0px;
+	right: 0;
+
+}
+
+#car_78_flip .top_border {
+
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 3px;
+	background: #000000;
+
+}
+
+#car_78_flip .left_border {
+
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 3px;
+	height: 100%;
+	background: #000000;
+
+}
+
+#car_78_flip .bottom_border {
+
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	height: 3px;
+	background: #000000;
+
+}
+
+img {
+
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	border: 0;
+	margin: 0;
+
+}
+
+#title {
+
+	position: relative;
+	height: auto;
+	width: 40%;
+	z-index: 20;
+	top: 0;
+	left: 0;
+
+}
+
+#title .border {
+
+	background: #ffffff;
+
+}
+
+.word_pixel_container {
+
+    width: calc(100% - ((100% / 40) * 5));
+    height: 0px;
+    display: grid;
+    grid-template-columns: repeat(8, calc(100% / 8));
+    grid-template-rows: repeat(1, 100%);
+    gap: calc(100% / 30);
+    background: #transparent;
+
+}
+
+.letter_pixel_container {
+
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, calc(100% / 5));
+    grid-template-rows: repeat(5, calc(100% / 5));
+    gap: 0;
+    position: relative;
+
+}
+
+.pixel {
+
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    display: block;
+
+}
+
+.pixel.color {
+
+	background-color: transparent;
+
+}
+
+.word_pixel_spacer {
+
+	width: 100%;
+	height: 0px;
+
+}
+
+#background {
+
+	padding: 0;
+	margin: 0;
+	border: 0;
+	background: #ffffff;
+	z-index: 1;
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+
+}
+
+.box_bar_container {
+
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(31, calc(100% / 31));
+    grid-template-rows: repeat(1, 100%);
+    gap: 0;
+    position: absolute;
+
+}
+
+.box_bar {
+
+	padding: 0;
+	border: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+
+}
+
+.box_bar.white {
+
+	background: #ffffff;
+
+}
+
+.appear_over {
+
+	position: absolute; 
+	height: 100%; 
+	width: 100%;
+
+}
+
+#skip_button {
+
+	padding: 0;
+	border: 0;
+	margin: 0;
+	position: absolute;
+	right: 0px;
+	bottom: 5%;
+	background: #505050;
+	height: 14%;
+	width: 25%;
+	z-index: 1000;
+
+}
+
+#skip_button .top_border {
+
+	background: #28282B;
+	width: 100%;
+	height: 5px;
+	position: absolute;
+	top: 0;
+	right: 0;
+
+}
+
+#skip_button .bottom_border {
+
+	background: #28282B;
+	width: 100%;
+	height: 5px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+
+}
+
+#border_circle {
+
+	background: #28282B;
+	width: 0px;
+	height: 100%;
+	position: absolute;
+	border-radius: 50%;
+	bottom: 0;
+	left: 0;
+
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate {
+  animation: rotate 10s infinite linear;
+}
+
+.callum_picture_box {
+
+	background: transparent;
+	height: 200px;
+	width: 28%;
+	position: absolute;
+	left: 12%;
+	bottom: 6%;
+	padding: 0;
+	border: 0;
+	margin: 0;
+
+}
+
+.callum_picture_box img {
+
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 20;
+
+}
+
+.callum_picture_box .circle {
+
+	background: transparent;
+	height: calc(100% - 6px);
+	width: calc(100% - 6px);
+	border: 3px solid #ffffff;
+	border-radius: 50%;
+	z-index: 21;
+
+}
+
+.callum_picture_box .top_border {
+
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 3px;
+	background: #ffffff;
+
+}
+
+.callum_picture_box .bottom_border {
+
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 3px;
+	background: #ffffff;
+
+}
+
+.callum_picture_box .left_border {
+
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 3px;
+	height: 100%;
+	background: #ffffff;
+
+}
+
+.callum_picture_box .right_border {
+
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 3px;
+	height: 100%;
+	background: #ffffff;
+
+}
+
+.callum_picture_box .straight_line {
+
+	position: absolute;
+	height: 3px;
+	width: 50%;
+	top: calc(50% - 1.5px);
+	right: -50%;
+	background: #ffffff;
+
+}
+
+.callum_picture_box .straight_line .vertical_line {
+
+	position: absolute;
+	height: 20px;
+	width: 3px;
+	bottom: 0;
+	right: 0;
+	background: #ffffff;
+
+}
+
+#border_circle .text {
+
+	padding: 0;
+	font-family: 'IBM Plex Mono', monospace;
+	position: absolute;
+	border: 0;
+	margin: 0;
+	color: #ffffff;
+	font-size: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	top: 0;
+	height: 100%;
+	width: 200px;
+	right: -250px;
+
+}
+
+.agustin_picture_box {
+
+	background: transparent;
+	height: 200px;
+	width: 28%;
+	position: absolute;
+	right: 12%;
+	top: 6%;
+	padding: 0;
+	border: 0;
+	margin: 0;
+
+}
+
+.agustin_picture_box img {
+
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 20;
+
+}
+
+.agustin_picture_box .circle {
+
+	background: transparent;
+	height: calc(100% - 6px);
+	width: calc(100% - 6px);
+	border: 3px solid #000000;
+	border-radius: 50%;
+	z-index: 21;
+
+}
+
+.agustin_picture_box .top_border {
+
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 3px;
+	background: #000000;
+
+}
+
+.agustin_picture_box .bottom_border {
+
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 3px;
+	background: #000000;
+
+}
+
+.agustin_picture_box .left_border {
+
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 3px;
+	height: 100%;
+	background: #000000;
+
+}
+
+.agustin_picture_box .right_border {
+
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 3px;
+	height: 100%;
+	background: #000000;
+
+}
+
+.agustin_picture_box .straight_line {
+
+	position: absolute;
+	height: 3px;
+	width: 50%;
+	top: calc(50% - 1.5px);
+	left: -50%;
+	background: #000000;
+
+}
+
+.agustin_picture_box .straight_line .vertical_line {
+
+	position: absolute;
+	height: 20px;
+	width: 3px;
+	top: 0;
+	left: 0;
+	background: #000000;
+
+}
+
+.left_slider img {
+
+	position: absolute;
+	height: 100%;
+
+}
