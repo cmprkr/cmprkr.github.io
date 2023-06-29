@@ -1,0 +1,181 @@
+body {
+
+	padding: 0;
+	border: 0;
+	margin: 0;
+
+}
+
+#background {
+
+	padding: 0;
+	border: 0;
+	margin: 0;
+	background: #000000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	width: 100vw;
+
+}
+
+#animation_box {
+
+	padding: 0;
+	border: 0;
+	margin: 0;
+	background: transparent;
+	position: relative;
+	width: 79%;
+	height: auto;
+
+}
+
+#cursor {
+
+	padding: 0;
+	border: 0;
+	margin: 0;
+	background: #ffffff;
+	position: absolute;
+	height: 0px;
+	width: 5px;
+	left: 11.32075%;
+	top: 0;
+	z-index: 11;
+
+}
+
+#typespace {
+
+	padding: 0;
+	border: 0;
+	margin: 0;
+	background: transparent;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: auto;
+	z-index: 10;
+
+}
+
+#power {
+
+	padding: 0;
+	border: 0;
+	margin: 0;
+	background: transparent;
+	width: 100%;
+	height: auto;
+	position: relative;
+
+}
+
+#people {
+
+	padding: 0;
+	border: 0;
+	margin: 0;
+	background: transparent;
+	width: 100%;
+	height: 0px;
+	position: relative;
+
+}
+
+.pixel_container {
+
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(53, calc(100% / 53));
+    grid-template-rows: repeat(5, calc(100% / 5));
+    gap: 0;
+
+}
+
+.fullpage_pixel_container {
+
+	padding: 0;
+	border: 0;
+	margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(170, calc(105vw / 170));
+    grid-template-rows: repeat(80, calc(105vh / 80));
+    gap: 0;
+    position: absolute;
+    left: -10px;
+    top: -10px;
+
+}
+
+.pixel {
+
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    display: block;
+
+}
+
+.fullpage_pixel {
+
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    display: block;
+
+}
+
+#people .pixel_container {
+	display: none;
+}
+
+.black {
+	background-color: #000000;
+}
+
+.green {
+    background-color: #000000;
+}
+
+.people_green {
+    background-color: transparent;
+}
+
+.white {
+    background-color: #000000;
+}
+
+.gray {
+	background-color: #737373;
+}
+
+.none {
+	background-color: transparent;
+}
+
+#space_container {
+
+    width: 100%;
+    height: 10%;
+    display: grid;
+    grid-template-columns: repeat(53, calc(100% / 53));
+    grid-template-rows: repeat(1, 100%);
+    gap: 0;
+
+}
+
+.space {
+
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+
+}
